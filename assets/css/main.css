@@ -72,6 +72,26 @@ input, select, textarea {
 	appearance: none;
 }
 
+.video-responsive{
+    overflow:hidden;
+    padding-bottom:51.75%;
+    position:relative;
+    height:0;
+	margin: 0;
+}
+.video-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+	max-height: 560px;
+}
+
+.li-center-button {
+	text-align: center;
+}
+
 /* Basic */
 
 	@-ms-viewport {
@@ -2118,6 +2138,7 @@ input, select, textarea {
 		padding: 0 2.5em;
 		text-overflow: ellipsis;
 		overflow: hidden;
+		margin: 1%; /*VINCE TODO*/
 	}
 
 		input[type="submit"].icon:before,
