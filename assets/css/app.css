@@ -6,6 +6,15 @@ body {
     color: black;
 }
 
+h1::selection, p::selection {
+    background: rgba(255, 255, 255, 0.99);
+    color: black;
+}
+
+hr {
+    background-color: white;
+}
+
 .navbar-brand {
     font-weight: 500;
     font-size: 1.5rem;
@@ -17,8 +26,12 @@ body {
 }
 
 .jumbotron {
-    background-color: #e9ecf2;
-    margin-top: 6rem;
+    background: linear-gradient(133deg, rgba(6,4,131,1) 22%, rgba(255,219,194,1) 100%);    margin-top: 6rem;
+    color: white;
+}
+
+.footer {
+    background: black;
 }
 
 .btn {
@@ -33,7 +46,18 @@ body {
 }
 
 .nav-item:hover {
-    background-color: #ffdbc2da;
+    background-color: rgba(0, 0, 0, 1); /*#ffdbc2da; #e9ecf2*/
+    color: white;
+}
+
+.navbar-light .nav-item .nav-link, .navbar-light .nav-item .nav-link:hover {
+    color: inherit;
+    transition: color 0.3s;
+}
+
+.copyright {
+    font-weight: 100;
+    font-size: 0.85rem;
 }
 
 /* .point-down:after {
