@@ -1,4 +1,23 @@
+/* import only the necessary Bootstrap files */
+@import "../node_modules/bootstrap/scss/functions"; 
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+/* -------begin customization-------- */
+
+/* change the primary theme color to red */
+$theme-colors: (
+  secondary: black,
+);
+
+/* -------end customization-------- */
+
+/* finally, import Bootstrap to set the changes! */
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+/* stuff originally from regular css */
 body {
+    margin: 0;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     background-color: white; /*#dfe9ed;*/
@@ -26,6 +45,12 @@ p {
 .navbar-brand {
     font-weight: 500;
     font-size: 1.5rem;
+    color: black;
+    transition: color 0.5s;
+}
+
+.navbar-brand:hover {
+    color: rgb(120, 120, 120) !important;
 }
 
 .navbar {
@@ -35,7 +60,7 @@ p {
 
 .jumbotron {
     background: linear-gradient(133deg, rgba(4,1,71,1) 0%, rgba(6,4,131,1) 20%, rgba(255,219,194,1) 95%, rgba(255,236,223,1) 100%);
-    margin-top: 6rem;
+    margin-top: 4.5rem;
     color: white;
 }
 

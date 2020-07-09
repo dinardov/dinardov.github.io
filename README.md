@@ -16,4 +16,6 @@ As of right now, I still don't know how to do basic page navigation that looks n
 
 ## 2. The Basics+
 
+1. Using the [Live Sass Compiler](https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass) extension to edit Bootstrap Sass. It's important to import the "necessary" files, make overrides, and then import the main bootstrap folder. See the [Bootstrap docs](https://getbootstrap.com/docs/4.1/getting-started/theming/#sass). This is how you can change things like the primary and secondary colors. 
+
 ## 3. The Not-So-Basics
