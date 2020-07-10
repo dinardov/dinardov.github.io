@@ -41,7 +41,7 @@
     <nav class="navbar navbar-expand-md navbar-light fixed-top py-0 shadow-sm">
         <div class="container">
             <a class="navbar-brand mx-0 px-3 py-0" href="#">Vincent Di Nardo</a>
-            <button class="navbar-toggler my-2" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+            <button class="navbar-toggler my-3" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
                 aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -49,7 +49,7 @@
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul class="navbar-nav mr-auto mt-lg-0 py-0">
                     <li class="nav-item pl-2 px-md-1 px-lg-2">
-                        <a class="nav-link py-4" href="#">Intro <span class="sr-only">(current)</span></a>
+                        <a class="nav-link py-4 active" href="#">Intro <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item pl-2 px-md-1 px-lg-2">
                         <a class="nav-link py-4" href="#">Tech Projects</a>
@@ -67,29 +67,45 @@
         </div>
     </nav>
 
-    <div class="jumbotron jumbotron-fluid text-center shadow px-5">
-        <h1 class="display-1">&lt;Hi, I’m Vince.&gt; <span class="point-down"></span></h1>
-        <p class="lead">I'm a software engineer and composer / audio designer based out of the Seattle area.</p>
-        <hr class="my-4">
-        <p>I like web development, entrepreneurship, games, music, and corgis. I like corgis a lot.</p>
-        <div class="container d-flex justify-content-around">
-            <div class="row">
-                <div class="col-12 col-md"><a class="btn btn-outline-light btn-lg" href="#" role="button"><i
-                            class="fas fa-laptop-code pr-2"></i>Tech Projects</a></div>
-                <div class="col-12 col-md"><a class="btn btn-outline-light btn-lg" href="#" role="button"><i
-                            class="fas fa-compact-disc pr-2"></i>Audio + Music</a></div>
-                <div class="col-12 col-md"><a class="btn btn-outline-light btn-lg" href="#" role="button"><i
-                            class="fas fa-pen-nib pr-2"></i>Blog</a>
+    <div class="jumbotron jumbotron-fluid text-center shadow px-5 pb-4">
+        <div class="heroToAnimate">
+            <h1 class="d-none d-md-block display-1">&lt;Hi, I’m Vince.&gt; <span class="point-down"></span></h1>
+            <h1 class="d-none d-sm-block d-md-none display-4">&lt;Hi, I’m Vince.&gt;</h1>
+            <h1 class="d-block d-sm-none">&lt;Hi, I’m Vince.&gt;</h1>
+            <p class="lead">I'm a software engineer and composer / audio designer based out of the Seattle area.</p>
+            <hr class="my-4">
+            <p class="follow">Check out some of my work!</p>
+            <!-- <p>I like web development, entrepreneurship, games, music, and corgis. I like corgis a lot.</p> -->
+            <div class="container d-flex justify-content-center">
+                <div class="d-none d-md-block pb-md-4 pt-md-3">
+                    <div class="d-inline mx-1 my-2 my-md-0"><a class="btn btn-outline-light btn-lg" href="#"
+                            role="button"><i class="fas fa-laptop-code buttonIconToAnimate"></i><span class="pl-2">Tech Projects</span></a></div>
+                    <div class="d-inline mx-1 my-2 my-md-0"><a class="btn btn-outline-light btn-lg" href="#"
+                            role="button"><i class="fas fa-compact-disc buttonIconToAnimate"></i><span class="pl-2">Audio + Music</span></a></div>
+                    <div class="d-inline mx-1 my-2 my-md-0"><a class="btn btn-outline-light btn-lg" href="#"
+                            role="button"><i class="fas fa-pen-nib buttonIconToAnimate"></i><span class="pl-2">Blog</span></a>
+                    </div>
+                </div>
+                <div class="row d-md-none">
+                    <div class="col-12 mx-1 my-2 my-md-0"><a class="btn btn-outline-light btn-lg" href="#"
+                            role="button"><i class="fas fa-laptop-code"></i><span class="pl-2">Tech Projects</span></a></div>
+                    <div class="col-12 mx-1 my-2 my-md-0"><a class="btn btn-outline-light btn-lg" href="#"
+                            role="button"><i class="fas fa-compact-disc"></i><span class="pl-2">Audio + Music</span></a></div>
+                    <div class="col-12 mx-1 my-2 my-md-0"><a class="btn btn-outline-light btn-lg" href="#"
+                            role="button"><i class="fas fa-pen-nib"></i><span class="pl-2">Blog</span></a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="jumbotron jumbotron-fluid footer text-center shadow px-5 mb-0 pb-1">
-        <h1 class="display-1">This is a footer.</h1>
-        <hr class="my-4">
-        <p class="copyright">© 2020 Vincent Di Nardo, All rights reserved.</p>
-    </div>
+    <footer>
+        <div class="jumbotron jumbotron-fluid footer text-center shadow px-5 mb-0 pb-1">
+            <h1 class="display-1">This is a footer.</h1>
+            <hr class="my-4">
+            <p class="copyright">© 2020 Vincent Di Nardo, All rights reserved. <a href="#"><i class="fas fa-gem gem"></i></a></p>
+        </div>
+    </footer>
 </body>
 
 </html>
