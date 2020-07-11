@@ -12,6 +12,8 @@ Ah, yes. A generic adage about how if I continue to do nothing, there is nothing
 
 The basic layout was all done with Bootstrap and CSS, along with some extra dependencies like [Google Fonts](https://fonts.google.com/) and [Font Awesome](https://fontawesome.com/) icons.
 
+1. Hero gradient was done with [CSS Gradient](https://cssgradient.io/) web app.
+
 As of right now, I still don't know how to do basic page navigation that looks nice (not a hard refresh). I also still am unsure how to do navigation without JS.
 
 ## 2. The Basics+

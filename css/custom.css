@@ -10867,7 +10867,8 @@ p {
 }
 
 .follow {
-  font-weight: 300;
+  font-weight: 200;
+  font-size: 1.25rem;
 }
 
 .navbar-brand {
@@ -10879,7 +10880,7 @@ p {
 }
 
 .navbar-brand:hover {
-  color: #CCCCCC !important;
+  color: #cccccc !important;
   -webkit-transition: color 0.1s;
   transition: color 0.1s;
 }
@@ -10900,12 +10901,21 @@ p {
   position: absolute;
   -webkit-transform: translateX(-3rem) translateY(-1.5rem);
           transform: translateX(-3rem) translateY(-1.5rem);
-  opacity: 20%;
+  opacity: 15%;
   -webkit-transform: scale(2, 2);
           transform: scale(2, 2);
 }
 
-.col-4 .footer {
+.outline-holder {
+  position: absolute;
+  right: 0;
+  opacity: 30%;
+  -webkit-transform: scale(1.75, 1.75) translateX(3rem) translateY(-4rem) rotate(180deg);
+          transform: scale(1.75, 1.75) translateX(3rem) translateY(-4rem) rotate(180deg);
+  z-index: 1;
+}
+
+.row .footer {
   color: white;
 }
 
