@@ -10874,17 +10874,25 @@ p {
   font-weight: 600;
   font-size: 1.5rem;
   color: black;
-  -webkit-transition: color 0.5s;
-  transition: color 0.5s;
+  -webkit-transition: color 0.75s;
+  transition: color 0.75s;
 }
 
 .navbar-brand:hover {
-  color: #787878 !important;
+  color: #CCCCCC !important;
+  -webkit-transition: color 0.1s;
+  transition: color 0.1s;
 }
 
 .navbar {
   background-color: rgba(255, 255, 255, 0.92);
   font-weight: 300;
+}
+
+.svg-holder {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-bottom: 4px;
 }
 
 .jumbotron {
@@ -11016,6 +11024,41 @@ p {
 a:hover .gem {
   -webkit-animation: buttonIconAnimation 0.5s 1 0s ease-in-out;
           animation: buttonIconAnimation 0.5s 1 0s ease-in-out;
+}
+
+@-webkit-keyframes logoAnimation {
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  50% {
+    -webkit-transform: translateX(20%);
+            transform: translateX(20%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@keyframes logoAnimation {
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  50% {
+    -webkit-transform: translateX(20%);
+            transform: translateX(20%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+div:hover svg {
+  -webkit-animation: logoAnimation 0.5s 1 0s ease-in-out;
+          animation: logoAnimation 0.5s 1 0s ease-in-out;
 }
 
 /* .point-down:after {

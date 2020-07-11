@@ -55,16 +55,23 @@ p {
   font-weight: 600;
   font-size: 1.5rem;
   color: black;
-  transition: color 0.5s;
+  transition: color 0.75s;
 }
 
 .navbar-brand:hover {
-  color: rgb(120, 120, 120) !important;
+  color: #CCCCCC !important;
+  transition: color 0.1s;
 }
 
 .navbar {
   background-color: rgba(255, 255, 255, 0.92);
   font-weight: 300;
+}
+
+.svg-holder {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-bottom: 4px;
 }
 
 .jumbotron {
@@ -162,6 +169,22 @@ p {
 
 a:hover .gem {
   animation: buttonIconAnimation 0.5s 1 0s ease-in-out;
+}
+
+@keyframes logoAnimation {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(20%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+div:hover svg {
+  animation: logoAnimation 0.5s 1 0s ease-in-out;
 }
 
 /* .point-down:after {
