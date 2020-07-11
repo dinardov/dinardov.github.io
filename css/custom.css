@@ -10874,8 +10874,8 @@ p {
   font-weight: 600;
   font-size: 1.5rem;
   color: black;
-  -webkit-transition: color 0.75s;
-  transition: color 0.75s;
+  -webkit-transition: color 1s;
+  transition: color 1s;
 }
 
 .navbar-brand:hover {
@@ -10893,12 +10893,28 @@ p {
   width: 1.5rem;
   height: 1.5rem;
   margin-bottom: 4px;
+  margin-left: 0.5rem;
+}
+
+.watermark-holder {
+  position: absolute;
+  -webkit-transform: translateX(-3rem) translateY(-1.5rem);
+          transform: translateX(-3rem) translateY(-1.5rem);
+  opacity: 20%;
+  -webkit-transform: scale(2, 2);
+          transform: scale(2, 2);
+}
+
+.col-4 .footer {
+  color: white;
 }
 
 .jumbotron {
   background: linear-gradient(133deg, #040147 0%, #060483 25%, #ffdbc2 96%, #ffecdf 100%);
   margin-top: 4.5rem;
   color: white;
+  overflow: hidden;
+  position: relative;
 }
 
 .footer {
@@ -11056,7 +11072,7 @@ a:hover .gem {
   }
 }
 
-div:hover svg {
+div:hover .main-logo {
   -webkit-animation: logoAnimation 0.5s 1 0s ease-in-out;
           animation: logoAnimation 0.5s 1 0s ease-in-out;
 }

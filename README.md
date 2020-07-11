@@ -2,11 +2,11 @@
 
 I was really inspired by [Tom Nick's](https://tomnick.org/) website (after seeing his Pokemon battle cry website) to make something clean and simple, but also still looking relatively modern (and also low-effort, but not CMS style).
 
-After about a month of me feeling like I didn't have the right *front-end skills* to make something *fancy*, and a bunch of YouTube videos later, I remembered a very important truth:
+After about a month of me feeling like I didn't have the right _front-end skills_ to make something _fancy_, and a bunch of YouTube videos later, I remembered a very important truth:
 
 > It is better to make something than to not make anything at all.
 
-Ah, yes. A generic adage about how if I continue to do nothing, there is nothing to improve upon. So let's just accept the fact that my website isn't going to be the *fanciest*, but rather a constant work in progress. Once I get the basic content done, then I can work towards improving its fanciness.
+Ah, yes. A generic adage about how if I continue to do nothing, there is nothing to improve upon. So let's just accept the fact that my website isn't going to be the _fanciest_, but rather a constant work in progress. Once I get the basic content done, then I can work towards improving its fanciness.
 
 ## 1. The Basics
 
@@ -20,4 +20,10 @@ As of right now, I still don't know how to do basic page navigation that looks n
 
 2. Animated the hero section using the [Keyframes](https://keyframes.app/) Chrome Extension.
 
+3. Used [Grayscale The Web](https://chrome.google.com/webstore/detail/grayscale-the-web-save-si/mblmpdpfppogibmoobibfannckeeleag?hl=en) Chrome Extension to see if there's any glaring contrast issues.
+
 ## 3. The Not-So-Basics
+
+1. I used [Affinity Designer](https://affinity.serif.com/en-us/designer/) to create a logo-like graphic placed next to left of my name in the navbar. I exported as an SVG without background for highest web quality, and inserted the `<svg>` HTML element only into a `<div>` that I made inline-block so I could place it next to my name. Since trying to place the svg into the `<a>` tag for the navbar-brand proved difficult, it's in a separate `<div>`. I also animated it on hover.
+
+2. I then made a watermark version of the svg (60% opacity on the back stroke, fill is white). I put it within the hero jumbotron (in a div), made the inner `<div>` with `position: absolute` and the jumbotron `position: relative` with `overflow: hidden` to prevent it from bleeding over the jumbotron.

@@ -55,7 +55,7 @@ p {
   font-weight: 600;
   font-size: 1.5rem;
   color: black;
-  transition: color 0.75s;
+  transition: color 1s;
 }
 
 .navbar-brand:hover {
@@ -72,6 +72,18 @@ p {
   width: 1.5rem;
   height: 1.5rem;
   margin-bottom: 4px;
+  margin-left: 0.5rem;
+}
+
+.watermark-holder {
+  position: absolute;
+  transform: translateX(-3rem) translateY(-1.5rem);
+  opacity: 20%;
+  transform: scale(2, 2);
+}
+
+.col-4 .footer {
+  color: white;
 }
 
 .jumbotron {
@@ -84,6 +96,8 @@ p {
   );
   margin-top: 4.5rem;
   color: white;
+  overflow: hidden;
+  position: relative;
 }
 
 .footer {
@@ -105,10 +119,6 @@ p {
   color: inherit;
   transition: color 0.3s;
 }
-
-// .active {
-//   border-bottom: 0.25rem solid black;
-// }
 
 .copyright {
   font-weight: 100;
@@ -183,7 +193,7 @@ a:hover .gem {
   }
 }
 
-div:hover svg {
+div:hover .main-logo {
   animation: logoAnimation 0.5s 1 0s ease-in-out;
 }
 
