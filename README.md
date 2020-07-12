@@ -24,8 +24,12 @@ As of right now, I still don't know how to do basic page navigation that looks n
 
 3. Used [Grayscale The Web](https://chrome.google.com/webstore/detail/grayscale-the-web-save-si/mblmpdpfppogibmoobibfannckeeleag?hl=en) Chrome Extension to see if there's any glaring contrast issues.
 
+4. Used an svg for a default favicon, and also included favicons for other platforms in case svg is not supported (used [favicon.io](https://favicon.io/) to convert svg to favicon file formats like .png and .ico).
+
 ## 3. The Not-So-Basics
 
 1. I used [Affinity Designer](https://affinity.serif.com/en-us/designer/) to create a logo-like graphic placed next to left of my name in the navbar. I exported as an SVG without background for highest web quality, and inserted the `<svg>` HTML element only into a `<div>` that I made inline-block so I could place it next to my name. Since trying to place the svg into the `<a>` tag for the navbar-brand proved difficult, it's in a separate `<div>`. I also animated it on hover.
 
 2. I then made a watermark version of the svg (60% opacity on the back stroke, fill is white). I put it within the hero jumbotron (in a div), made the inner `<div>` with `position: absolute` and the jumbotron `position: relative` with `overflow: hidden` to prevent it from bleeding over the jumbotron.
+
+3. Used an outline version of the svg and placed it within the footer. Realized that it was getting clipped by the elements in the grid, so I made it's z-index 1, but then you couldn't click the elements. Eventually learned that you have to make elements use the position attribute to use z-index, so I made the other footer elements have a z-index of 2 and made their backgrounds transparent.
