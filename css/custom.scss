@@ -91,11 +91,11 @@ p {
   z-index: 1;
 }
 
-.fa-linkedin, .fa-github-square {
+.fa-linkedin, .fa-github-square, .fa-soundcloud {
   font-size: 2rem;
 }
 
-a:hover .fa-linkedin, a:hover .fa-github-square {
+a:hover .fa-linkedin, a:hover .fa-github-square, a:hover .fa-soundcloud {
   color: #CCC;
 }
 
@@ -103,10 +103,6 @@ footer .footer {
   color: white;
   position: relative;
   z-index: 2;
-}
-
-.footer .d-block {
-  background: transparent;
 }
 
 .jumbotron {
@@ -123,8 +119,12 @@ footer .footer {
   position: relative;
 }
 
-.footer {
+.footer-background {
   background: black;
+}
+
+.footer {
+  background: transparent;
 }
 
 .nav-item {
