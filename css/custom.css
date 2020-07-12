@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* ------- Override Bootstrap Variables -------- */
+/* ------------------------ Override Bootstrap Variables ------------------------- */
 /* change the primary theme color to red */
 /* finally, import Bootstrap to set the changes! */
 /*!
@@ -10822,8 +10822,7 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
-/* --------------------------------------------- */
-/* --------------- Extra Sass ------------------ */
+/* --------------------------------- Extra Sass ---------------------------------- */
 /* stuff originally from regular css */
 body {
   margin: 0;
@@ -10851,10 +10850,29 @@ div::selection {
 
 hr {
   background-color: white;
+  -webkit-box-shadow: 0px 1px 3px #888;
+          box-shadow: 0px 1px 3px #888;
 }
 
 p {
   font-weight: 400;
+  text-shadow: 0px 1px 3px #555;
+}
+
+h1 {
+  text-shadow: 0px 2px 4px #777;
+}
+
+.btn-outline-light {
+  text-shadow: 0px 1px 3px #666;
+  -webkit-transition: text-shadow 0.3s;
+  transition: text-shadow 0.3s;
+}
+
+.btn-outline-light:hover {
+  text-shadow: none;
+  -webkit-transition: text-shadow 0.1s;
+  transition: text-shadow 0.1s;
 }
 
 .gem,
@@ -10999,7 +11017,7 @@ a:hover .fa-soundcloud {
   transition: transform 0.1s, -webkit-transform 0.1s;
 }
 
-/* ------------ ANIMATIONS!!! -------------- */
+/* ------------------------------- ANIMATIONS!!! --------------------------------- */
 @-webkit-keyframes heroAnimation {
   0% {
     -webkit-transform: rotate(0) translateY(-20%);
@@ -11067,8 +11085,7 @@ a:hover .fa-soundcloud {
 }
 
 a:hover .gem {
-  -webkit-animation: buttonIconAnimation 0.5s 1 0s ease-in-out;
-          animation: buttonIconAnimation 0.5s 1 0s ease-in-out;
+  color: #CCC;
 }
 
 @-webkit-keyframes logoAnimation {
