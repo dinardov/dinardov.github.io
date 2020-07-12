@@ -13,6 +13,20 @@ $theme-colors: (
 
 /* --------------- Extra Sass ------------------ */
 
+$hero-gradient: (
+  linear-gradient(315deg, rgba(34, 193, 195, 1) 0%, rgba(205, 112, 255, 1) 100%)
+);
+
+$alt-hero-gradient: (
+  linear-gradient(
+      133deg,
+      rgba(4, 1, 71, 1) 0%,
+      rgba(6, 4, 131, 1) 25%,
+      rgba(255, 219, 194, 1) 96%,
+      rgba(255, 236, 223, 1) 100%
+    )
+);
+
 /* stuff originally from regular css */
 body {
   margin: 0;
@@ -92,13 +106,7 @@ p {
 }
 
 .jumbotron {
-  background: linear-gradient(
-    133deg,
-    rgba(4, 1, 71, 1) 0%,
-    rgba(6, 4, 131, 1) 25%,
-    rgba(255, 219, 194, 1) 96%,
-    rgba(255, 236, 223, 1) 100%
-  );
+  background: $hero-gradient;
   margin-top: 4.5rem;
   color: white;
   overflow: hidden;
@@ -119,13 +127,17 @@ footer .footer {
   z-index: 2;
 }
 
-.fa-linkedin, .fa-github-square, .fa-soundcloud {
+.fa-linkedin,
+.fa-github-square,
+.fa-soundcloud {
   font-size: 1.75rem;
-  padding-bottom: .65rem;
+  padding-bottom: 0.65rem;
 }
 
-a:hover .fa-linkedin, a:hover .fa-github-square, a:hover .fa-soundcloud {
-  color: #CCC;
+a:hover .fa-linkedin,
+a:hover .fa-github-square,
+a:hover .fa-soundcloud {
+  color: #ccc;
 }
 
 .nav-item {

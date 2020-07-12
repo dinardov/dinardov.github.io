@@ -10916,7 +10916,7 @@ p {
 }
 
 .jumbotron {
-  background: linear-gradient(133deg, #040147 0%, #060483 25%, #ffdbc2 96%, #ffecdf 100%);
+  background: linear-gradient(315deg, #22c1c3 0%, #cd70ff 100%);
   margin-top: 4.5rem;
   color: white;
   overflow: hidden;
@@ -10937,13 +10937,17 @@ footer .footer {
   z-index: 2;
 }
 
-.fa-linkedin, .fa-github-square, .fa-soundcloud {
+.fa-linkedin,
+.fa-github-square,
+.fa-soundcloud {
   font-size: 1.75rem;
-  padding-bottom: .65rem;
+  padding-bottom: 0.65rem;
 }
 
-a:hover .fa-linkedin, a:hover .fa-github-square, a:hover .fa-soundcloud {
-  color: #CCC;
+a:hover .fa-linkedin,
+a:hover .fa-github-square,
+a:hover .fa-soundcloud {
+  color: #ccc;
 }
 
 .nav-item {
