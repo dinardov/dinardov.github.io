@@ -37,7 +37,8 @@ body {
 
 h1::selection,
 p::selection,
-div::selection {
+div::selection,
+a::selection {
   background: rgba(255, 255, 255, 0.99);
   color: black;
 }

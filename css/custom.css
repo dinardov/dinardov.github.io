@@ -10836,14 +10836,16 @@ body {
 
 h1::-moz-selection,
 p::-moz-selection,
-div::-moz-selection {
+div::-moz-selection,
+a::-moz-selection {
   background: rgba(255, 255, 255, 0.99);
   color: black;
 }
 
 h1::selection,
 p::selection,
-div::selection {
+div::selection,
+a::selection {
   background: rgba(255, 255, 255, 0.99);
   color: black;
 }
