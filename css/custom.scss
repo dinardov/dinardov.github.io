@@ -11,64 +11,83 @@ $theme-colors: (
 
 /* --------------------------------- Extra Sass ---------------------------------- */
 
+$background-color: #F5F5F5;
+
 $hero-gradient: (
-  linear-gradient(315deg, rgba(34, 193, 195, 1) 0%, rgba(205, 112, 255, 1) 100%)
+  rgb(132, 66, 255)
+    // linear-gradient(150deg, rgba(66,83,255,1) 0%, rgb(174, 131, 243) 100%)
+    // linear-gradient(-45deg, rgba(66,83,255,1) 50%, rgb(161, 168, 241) 100%)
+    // linear-gradient(315deg, rgb(39, 211, 223) 0%, rgba(205, 112, 255, 1) 100%)
+    // linear-gradient(315deg, rgba(146,219,255,1) 0%, rgba(221,159,255,1) 80%)
+    // linear-gradient(
+    //   133deg,
+    //   rgba(4, 1, 71, 1) 0%,
+    //   rgba(6, 4, 131, 1) 25%,
+    //   rgba(255, 219, 194, 1) 96%,
+    //   rgba(255, 236, 223, 1) 100%
+    // )
 );
 
-$alt-hero-gradient: (
-  linear-gradient(
-    133deg,
-    rgba(4, 1, 71, 1) 0%,
-    rgba(6, 4, 131, 1) 25%,
-    rgba(255, 219, 194, 1) 96%,
-    rgba(255, 236, 223, 1) 100%
-  )
-);
+$hero-text-color: white;
+
+$use-text-shadow: false;
 
 /* stuff originally from regular css */
 body {
   margin: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Nunito", sans-serif;
   font-weight: 300;
-  background-color: white; /*#dfe9ed;*/
+  background-color: $background-color; /*#dfe9ed;*/
   height: 100%;
   color: black;
 }
 
 h1::selection,
+h2::selection,
+h3::selection,
 p::selection,
 div::selection,
+span::selection,
 a::selection {
-  background: rgba(255, 255, 255, 0.99);
+  background: rgba(253, 250, 57, 0.9);
   color: black;
 }
 
 hr {
   background-color: white;
-  box-shadow: 0px 1px 3px #888;
+  @if $use-text-shadow {
+    box-shadow: 0px 1px 3px #888;
+  }
 }
 
 p {
   font-weight: 400;
-  text-shadow: 0px 1px 3px #555;
+  @if $use-text-shadow {
+    text-shadow: 0px 1px 3px #555;
+  }
 }
 
 h1 {
-  text-shadow: 0px 2px 4px #777;
+  @if $use-text-shadow {
+    text-shadow: 0px 2px 4px #555;
+  }
 }
 
 .btn-outline-light {
-  text-shadow: 0px 1px 3px #666;
-  transition: text-shadow 0.3s;
+  @if $use-text-shadow {
+    text-shadow: 0px 1px 3px #666;
+    transition: text-shadow 0.3s;
+  }
 }
 
 .btn-outline-light:hover {
-  text-shadow: none;
-  transition: text-shadow 0.1s;
+  @if $use-text-shadow {
+    text-shadow: none;
+    transition: text-shadow 0.1s;
+  }
 }
 
-.gem,
-.gem:hover {
+.gem {
   color: white;
 }
 
@@ -123,7 +142,7 @@ h1 {
 .jumbotron {
   background: $hero-gradient;
   margin-top: 4.5rem;
-  color: white;
+  color: $hero-text-color;
   overflow: hidden;
   position: relative;
 }
@@ -136,7 +155,8 @@ h1 {
   background: transparent;
 }
 
-footer .footer {
+footer .footer,
+footer .gem {
   color: white;
   position: relative;
   z-index: 2;
@@ -194,6 +214,20 @@ a:hover .fa-soundcloud {
   transition: transform 0.1s;
 }
 
+.title,
+.time-interval {
+  font-weight: 500 !important;
+}
+
+.caption {
+  font-weight: 200;
+}
+
+.resume-card {
+  border-radius: 0.5rem;
+  background: white;
+}
+
 /* ------------------------------- ANIMATIONS!!! --------------------------------- */
 
 @keyframes heroAnimation {
@@ -228,9 +262,28 @@ a:hover .fa-soundcloud {
   animation: buttonIconAnimation 0.5s 1 0s ease-in-out;
 }
 
+@keyframes altButtonIconAnimation {
+  0% {
+    transform: translateX(0%);
+  }
+  33% {
+    transform: translateX(15%);
+  }
+  66% {
+    transform: translateX(-15%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.btn:hover .altButtonIconToAnimate {
+  animation: altButtonIconAnimation 0.8s 1 0s ease-in-out;
+}
+
 a:hover .gem {
   // animation: buttonIconAnimation 0.5s 1 0s ease-in-out;
-  color: #CCC;
+  color: #ccc;
 }
 
 @keyframes logoAnimation {
@@ -249,10 +302,19 @@ div:hover .main-logo {
   animation: logoAnimation 0.5s 1 0s ease-in-out;
 }
 
-/* .point-down:after {
-    content: "👋";
+@keyframes resumeAnimation {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(20%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
 }
 
-.point-down:hover:after {
-    content: "👇";
-} */
+h2:hover .arrow {
+  display: inline-block;
+  animation: resumeAnimation 0.5s 1 0s ease-in-out;
+}
