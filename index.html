@@ -17,9 +17,9 @@
     <link rel="manifest" href="favicons/site.webmanifest">
 
     <!-- Google Font -->
-    <!-- <link
+    <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-        rel="stylesheet"> -->
+        rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
@@ -105,8 +105,8 @@
         </div>
         <div class="heroToAnimate">
             <h1 class="d-none d-md-block display-1">Hi, I’m Vince. <span class="point-down"></span></h1>
-            <h1 class="d-none d-sm-block d-md-none display-4">&lt;Hi, I’m Vince.&gt;</h1>
-            <h1 class="d-block d-sm-none">&lt;Hi, I’m Vince.&gt;</h1>
+            <h1 class="d-none d-sm-block d-md-none display-4">Hi, I’m Vince.</h1>
+            <h1 class="d-block d-sm-none">Hi, I’m Vince.</h1>
             <p class="lead">I'm a software engineer and composer / audio designer based out of the Seattle area.</p>
             <hr class="my-4 mx-3">
             <p class="follow">Check out some of my work!</p>
@@ -141,13 +141,16 @@
     </div>
 
     <div id="resume" class="resume mx-5">
-        <h2 class="text-center display-4"><span class="arrow"><i class="fas fa-caret-down"></i></span> Resume</h2>
+        <h2 class="text-center display-4 d-none d-md-block"><span class="arrow"><i class="fas fa-caret-down"></i></span>
+            Resume</h2>
+        <h2 class="text-center display-5 d-md-none mb-5"><span class="arrow"><i class="fas fa-caret-down"></i></span>
+            Resume</h2>
 
         <div class="resume-section">
-            <h3>Experience</h3>
+            <h3 class="mb-3">Experience</h3>
 
             <div class="resume-card shadow-sm p-3 mb-4">
-                <section class="d-flex justify-content-between">
+                <section class="d-flex justify-content-between mb-1">
                     <span class="title">Software Engineer @ Microsoft</span>
                     <span class="time-interval">August 2020 — Present</span>
                 </section>
@@ -155,32 +158,125 @@
             </div>
 
             <div class="resume-card shadow-sm p-3 mb-4">
-                <section class="d-flex justify-content-between">
+                <section class="d-flex justify-content-between mb-1">
                     <span class="title">Software Engineering Intern @ Microsoft</span>
                     <span class="time-interval">September — November 2019</span>
                 </section>
-                <span class="caption">TBD! Probably some MR stuff.</span>
+                <span class="caption">
+                    I built prototypes for voice interactions in Remote Assist, a HoloLens-based application. The first
+                    prototype provided feedback and suggestions in the field of vision based on a voice command attempt.
+                    The second prototype introduced natural language processing of voice commands through Azure APIs.
+                    This aimed to reduce cognitive load in remembering commands and derived command intent based on
+                    keywords and phrases.
+                </span>
             </div>
 
             <div class="resume-card shadow-sm p-3 mb-4">
-                <section class="d-flex justify-content-between">
+                <section class="d-flex justify-content-between mb-1">
                     <span class="title">Software Engineering Intern @ Tsugi, G.K.</span>
                     <span class="time-interval">May — August 2019</span>
                 </section>
-                <span class="caption">TBD! Probably some MR stuff.</span>
+                <span class="caption">I implemented parsers for motion capture formats including BVH and the proprietary
+                    Autodesk FBX ASCII format. These parsers allow users to assign an animation curve to control a
+                    time-based parameter in the audio middleware application GameSynth. Additionally, I prototyped a
+                    wrapper for real-time Leap Motion data input to control audio parameters.</span>
             </div>
         </div>
 
         <div class="resume-section">
-            <h3>Projects</h3>
+            <h3 class="mb-3">Projects</h3>
+
+            <div id="portfolio" class="resume-card shadow-sm p-3 mb-4">
+                <section class="d-flex justify-content-between mb-1">
+                    <span class="title">Personal Portfolio Website</span>
+                    <span class="time-interval">June 2020 — Present</span>
+                </section>
+                <span class="caption">I'm going through Colt Steele's <em>The Web Developer Bootcamp</em>, so I used a
+                    combination of Bootstrap and extra stuff I needed to research like vector graphics and Sass.</span>
+                <hr>
+                <div class="technologies">
+                    <span class="tech px-2 mb-2">HTML</span>
+                    <span class="tech px-2 mb-2">Sass / CSS</span>
+                    <span class="tech px-2 mb-2">JavaScript</span>
+                    <span class="tech px-2 mb-2">Node.js</span>
+                    <span class="tech px-2 mb-2">Bootstrap</span>
+                    <span class="tech px-2 mb-2"></span>
+                </div>
+            </div>
+
+            <div id="melodWe" class="resume-card shadow-sm p-3 mb-4">
+                <section class="d-flex justify-content-between mb-1">
+                    <span class="title">melodWe</span>
+                    <span class="time-interval">January — May 2020</span>
+                </section>
+                <span class="caption">melodWe allows composers to congregate in virtual rooms and vote on each
+                    successive note in a melody in real time. Each note is randomly determined via weighted probability
+                    based on the number of votes. Both pitch and duration are determined randomly. This project was for
+                    my capstone course at Virginia Tech (senior project), in collaboration with my project partner
+                    Lauren Ahart.</span>
+                
+                <div class="d-flex justify-content-center">
+                    <span class="project-links px-2 mx-1 mb-2 mt-3">
+                        <a href="http://melodwe.vincentdinardo.com" target="_blank">&gt; hosted version</a>
+                    </span>
+                </div>
+                <hr>
+                <div class="technologies">
+                    <span class="tech px-2 mb-2">JavaScript</span>
+                    <span class="tech px-2 mb-2">Node.js</span>
+                    <span class="tech px-2 mb-2">Express.js</span>
+                    <span class="tech px-2 mb-2">Socket.IO</span>
+                    <span class="tech px-2 mb-2">MySQL</span>
+                    <span class="tech px-2 mb-2">Docker</span>
+                    <span class="tech px-2 mb-2">Nginx</span>
+                    <span class="tech px-2 mb-2">React</span>
+                    <span class="tech px-2 mb-2">Material-UI</span>
+                    <span class="tech px-2 mb-2">p5.js</span>
+                </div>
+            </div>
+
+            <div id="surveyor" class="resume-card shadow-sm p-3 mb-4">
+                <section class="d-flex justify-content-between mb-1">
+                    <span class="title">Surveyor</span>
+                    <span class="time-interval">January — May 2019</span>
+                </section>
+                <span class="caption">A platform where admins can create surveys and all users can vote on surveys and
+                    see results change in real time. This project was for CS 3754 Cloud Software Development, and the
+                    instructor selected my implementation as an example.</span>
+                <div class="d-flex justify-content-center">
+                    <span class="project-links px-2 mx-1 mb-2 mt-3">
+                        <a href="https://www.cs.cloud.vt.edu/projects/2019/dinardov/" target="_blank">&gt; hosted version</a>
+                    </span>
+                    <span class="project-links px-2 mx-1 mb-2 mt-3">
+                        <a href="https://www.cs.cloud.vt.edu/#/" target="_blank">&gt; class website</a>
+                    </span>
+                </div>
+                <hr>
+                <div class="technologies">
+                    <span class="tech px-2 mb-2">JavaScript</span>
+                    <span class="tech px-2 mb-2">Node.js</span>
+                    <span class="tech px-2 mb-2">Express.js</span>
+                    <span class="tech px-2 mb-2">JWT</span>
+                    <span class="tech px-2 mb-2">Redis</span>
+                    <span class="tech px-2 mb-2">Socket.IO</span>
+                    <span class="tech px-2 mb-2">MySQL</span>
+                    <span class="tech px-2 mb-2">Nginx</span>
+                    <span class="tech px-2 mb-2">React</span>
+                    <span class="tech px-2 mb-2">Material-UI</span>
+                </div>
+            </div>
         </div>
 
         <div class="resume-section">
-            <h3>Leadership</h3>
+            <h3 class="mb-3">Leadership</h3>
         </div>
 
         <div class="resume-section">
-            <h3>Honors + Awards</h3>
+            <h3 class="mb-3">Education</h3>
+        </div>
+
+        <div class="resume-section">
+            <h3 class="mb-3">Honors + Awards</h3>
         </div>
 
     </div>
@@ -207,22 +303,24 @@
                         <div class=" pb-3"><a class=" footer" href="#"">Blog</a></div>
                     </div>
                     <div class=" col-6 col-sm-4">
-                                        <div class="pb-3"><a class="footer" href="#"">About Me</a></div>
+                                            <div class="pb-3"><a class="footer" href="#"">About Me</a></div>
                         <div class=" pb-3"><a class=" footer" href="#resume"">Resume</a></div>
                         <div class=" pb-3"><a class=" footer" href="#"">Contact Me</a></div>
                     </div>
                     <div class=" d-none d-sm-block col-sm-4">
-                                                        <div><a href="https://www.linkedin.com/in/vincent-di-nardo/"
-                                                                aria-label="LinkedIn" target="_blank" class="footer"><i
-                                                                    class="fab fa-linkedin"></i></a></div>
-                                                        <div><a href="https://github.com/dinardov" aria-label="GitHub"
-                                                                target="_blank" class="footer"><i
-                                                                    class="fab fa-github-square"></i></a></div>
-                                                        <div><a href="https://soundcloud.com/vince-di-nardo"
-                                                                aria-label="SoundCloud" target="_blank"
-                                                                class="footer"><i class="fab fa-soundcloud"></i></a>
-                                                        </div>
-                                        </div>
+                                                            <div><a href="https://www.linkedin.com/in/vincent-di-nardo/"
+                                                                    aria-label="LinkedIn" target="_blank"
+                                                                    class="footer"><i class="fab fa-linkedin"></i></a>
+                                                            </div>
+                                                            <div><a href="https://github.com/dinardov"
+                                                                    aria-label="GitHub" target="_blank"
+                                                                    class="footer"><i
+                                                                        class="fab fa-github-square"></i></a></div>
+                                                            <div><a href="https://soundcloud.com/vince-di-nardo"
+                                                                    aria-label="SoundCloud" target="_blank"
+                                                                    class="footer"><i class="fab fa-soundcloud"></i></a>
+                                                            </div>
+                                            </div>
                         </div>
                         <div class="d-sm-none d-flex justify-content-center pt-3">
                             <a href="https://www.linkedin.com/in/vincent-di-nardo/" aria-label="LinkedIn"

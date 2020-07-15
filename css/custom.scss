@@ -13,8 +13,15 @@ $theme-colors: (
 
 $background-color: #F5F5F5;
 
+$selection-color: rgba(253, 233, 57, 0.9);
+
+$portfolio-tech-color: rgb(201, 245, 235);
+$melodWe-tech-color: rgb(240, 201, 245);
+$surveyor-tech-color: #b6deff;
+
 $hero-gradient: (
-  rgb(132, 66, 255)
+  #4253FF
+  // rgb(132, 66, 255)
     // linear-gradient(150deg, rgba(66,83,255,1) 0%, rgb(174, 131, 243) 100%)
     // linear-gradient(-45deg, rgba(66,83,255,1) 50%, rgb(161, 168, 241) 100%)
     // linear-gradient(315deg, rgb(39, 211, 223) 0%, rgba(205, 112, 255, 1) 100%)
@@ -49,7 +56,7 @@ p::selection,
 div::selection,
 span::selection,
 a::selection {
-  background: rgba(253, 250, 57, 0.9);
+  background: $selection-color;
   color: black;
 }
 
@@ -220,12 +227,52 @@ a:hover .fa-soundcloud {
 }
 
 .caption {
-  font-weight: 200;
+  font-weight: 300;
 }
 
 .resume-card {
   border-radius: 0.5rem;
   background: white;
+}
+
+#melodWe .tech {
+  display: inline-block;
+  background: $melodWe-tech-color;
+  border-radius: 5px;
+  font-weight: 600;
+  color: darken($color: $melodWe-tech-color, $amount: 30%);
+}
+
+#surveyor .tech {
+  display: inline-block;
+  background: $surveyor-tech-color;
+  border-radius: 5px;
+  font-weight: 600;
+  color: darken($color: $surveyor-tech-color, $amount: 40%);
+}
+
+#portfolio .tech {
+  display: inline-block;
+  background: $portfolio-tech-color;
+  border-radius: 5px;
+  font-weight: 600;
+  color: darken($color: $portfolio-tech-color, $amount: 50%);
+}
+
+.project-links {
+  display: inline-block;
+  background: rgb(65, 65, 65);
+  border-radius: 5px;
+  font-weight: 600;
+  
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+  &:hover {
+    background: rgb(122, 122, 122);
+  }
 }
 
 /* ------------------------------- ANIMATIONS!!! --------------------------------- */

@@ -10840,7 +10840,7 @@ p::-moz-selection,
 div::-moz-selection,
 span::-moz-selection,
 a::-moz-selection {
-  background: rgba(253, 250, 57, 0.9);
+  background: rgba(253, 233, 57, 0.9);
   color: black;
 }
 
@@ -10851,7 +10851,7 @@ p::selection,
 div::selection,
 span::selection,
 a::selection {
-  background: rgba(253, 250, 57, 0.9);
+  background: rgba(253, 233, 57, 0.9);
   color: black;
 }
 
@@ -10921,7 +10921,7 @@ p {
 }
 
 .jumbotron {
-  background: #8442ff;
+  background: #4253FF;
   margin-top: 4.5rem;
   color: white;
   overflow: hidden;
@@ -11011,12 +11011,52 @@ a:hover .fa-soundcloud {
 }
 
 .caption {
-  font-weight: 200;
+  font-weight: 300;
 }
 
 .resume-card {
   border-radius: 0.5rem;
   background: white;
+}
+
+#melodWe .tech {
+  display: inline-block;
+  background: #f0c9f5;
+  border-radius: 5px;
+  font-weight: 600;
+  color: #cc48dd;
+}
+
+#surveyor .tech {
+  display: inline-block;
+  background: #b6deff;
+  border-radius: 5px;
+  font-weight: 600;
+  color: #0080e9;
+}
+
+#portfolio .tech {
+  display: inline-block;
+  background: #c9f5eb;
+  border-radius: 5px;
+  font-weight: 600;
+  color: #1ea183;
+}
+
+.project-links {
+  display: inline-block;
+  background: #414141;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.project-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.project-links:hover {
+  background: #7a7a7a;
 }
 
 /* ------------------------------- ANIMATIONS!!! --------------------------------- */
