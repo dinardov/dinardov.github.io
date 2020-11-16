@@ -10839,7 +10839,9 @@ h3::-moz-selection,
 p::-moz-selection,
 div::-moz-selection,
 span::-moz-selection,
-a::-moz-selection {
+a::-moz-selection,
+em::-moz-selection,
+strong::-moz-selection {
   background: rgba(253, 233, 57, 0.9);
   color: black;
 }
@@ -10850,7 +10852,9 @@ h3::selection,
 p::selection,
 div::selection,
 span::selection,
-a::selection {
+a::selection,
+em::selection,
+strong::selection {
   background: rgba(253, 233, 57, 0.9);
   color: black;
 }
@@ -10906,7 +10910,7 @@ p {
   position: absolute;
   -webkit-transform: translateX(-3rem) translateY(-1.5rem);
           transform: translateX(-3rem) translateY(-1.5rem);
-  opacity: 15%;
+  opacity: 30%;
   -webkit-transform: scale(2, 2);
           transform: scale(2, 2);
 }
@@ -11044,7 +11048,6 @@ a:hover .fa-soundcloud {
 }
 
 .project-links {
-  display: inline-block;
   background: #414141;
   border-radius: 5px;
   font-weight: 600;
@@ -11053,6 +11056,7 @@ a:hover .fa-soundcloud {
 .project-links a {
   color: white;
   text-decoration: none;
+  display: inline-block;
 }
 
 .project-links:hover {
