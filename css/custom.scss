@@ -351,19 +351,19 @@ div:hover .main-logo {
   animation: logoAnimation 0.5s 1 0s ease-in-out;
 }
 
-@keyframes resumeAnimation {
-  0% {
-    transform: translateY(0%);
-  }
-  50% {
-    transform: translateY(20%);
-  }
-  100% {
-    transform: translateY(0%);
-  }
-}
+// @keyframes resumeAnimation {
+//   0% {
+//     transform: translateY(0%);
+//   }
+//   50% {
+//     transform: translateY(20%);
+//   }
+//   100% {
+//     transform: translateY(0%);
+//   }
+// }
 
-h2:hover .arrow {
-  display: inline-block;
-  animation: resumeAnimation 0.5s 1 0s ease-in-out;
-}
+// h2:hover .arrow {
+//   display: inline-block;
+//   animation: resumeAnimation 0.5s 1 0s ease-in-out;
+// }

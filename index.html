@@ -1,353 +1,521 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- Meta Tags -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Title (ME!) -->
     <title>Vince Di Nardo</title>
 
     <!-- Favicons -->
-    <link rel="icon" type="image/svg+xml" href="favicons/favicon.svg">
-    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
-    <link rel="manifest" href="favicons/site.webmanifest">
+    <link rel="icon" type="image/svg+xml" href="favicons/favicon.svg" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicons/site.webmanifest" />
 
     <!-- Google Font -->
     <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
     <link
-        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/custom.css">
-</head>
+    <link rel="stylesheet" href="css/custom.css" />
+  </head>
 
-<body>
+  <body>
     <nav class="navbar navbar-expand-md navbar-light fixed-top py-0 shadow-sm">
-        <div class="svg-holder d-none d-md-inline-block">
-            <svg class="main-logo" width="100%" height="100%" viewBox="0 0 884 977" version="1.1"
-                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"
-                xmlns:serif="http://www.serif.com/"
-                style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
-                <g>
-                    <path d="M881.094,591.877l-879.011,382.71l0,-247.276l613.385,-241.16l265.626,-103.979l0,209.705Z"
-                        style="fill:none;fill-rule:nonzero;stroke:#000;stroke-width:40px;" />
-                    <path d="M881.094,382.172l-265.626,103.979l-613.385,-238.539l0,-245.529l879.011,380.089Z"
-                        style="fill:none;fill-rule:nonzero;stroke:#000;stroke-width:40px;" />
-                </g>
-            </svg>
-        </div>
-        <a class="navbar-brand mx-0 px-3 py-0" href="#">
-            Vincent Di Nardo</a>
-        <button class="navbar-toggler my-3" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
-            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+      <div class="svg-holder d-none d-md-inline-block">
+        <svg
+          class="main-logo"
+          width="100%"
+          height="100%"
+          viewBox="0 0 884 977"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          xml:space="preserve"
+          xmlns:serif="http://www.serif.com/"
+          style="
+            fill-rule: evenodd;
+            clip-rule: evenodd;
+            stroke-linejoin: round;
+            stroke-miterlimit: 2;
+          "
+        >
+          <g>
+            <path
+              d="M881.094,591.877l-879.011,382.71l0,-247.276l613.385,-241.16l265.626,-103.979l0,209.705Z"
+              style="
+                fill: none;
+                fill-rule: nonzero;
+                stroke: #000;
+                stroke-width: 40px;
+              "
+            />
+            <path
+              d="M881.094,382.172l-265.626,103.979l-613.385,-238.539l0,-245.529l879.011,380.089Z"
+              style="
+                fill: none;
+                fill-rule: nonzero;
+                stroke: #000;
+                stroke-width: 40px;
+              "
+            />
+          </g>
+        </svg>
+      </div>
+      <a class="navbar-brand mx-0 px-3 py-0" href="#"> Vincent Di Nardo</a>
+      <button
+        class="navbar-toggler my-3"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-lg-0 py-0">
+          <li class="nav-item pl-2 px-md-1 px-lg-2">
+            <a class="nav-link py-4" href="#"
+              >About <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item pl-2 px-md-1 px-lg-2">
+            <a class="nav-link py-4" href="#">Tech Projects</a>
+          </li>
+          <li class="nav-item pl-2 px-md-1 px-lg-2">
+            <a class="nav-link py-4" href="#">Audio + Music</a>
+          </li>
+          <li class="nav-item pl-2 px-md-1 px-lg-2">
+            <a class="nav-link py-4" href="#">Blog</a>
+          </li>
+          <li class="nav-item pl-2 px-md-1 px-lg-2 d-md-none">
+            <a class="nav-link py-4" href="#">Contact</a>
+          </li>
+        </ul>
+
+        <button class="btn btn-outline-primary my-2 m-0 d-none d-md-inline">
+          Contact
         </button>
-
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav mr-auto mt-lg-0 py-0">
-                <li class="nav-item pl-2 px-md-1 px-lg-2">
-                    <a class="nav-link py-4" href="#">About <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item pl-2 px-md-1 px-lg-2">
-                    <a class="nav-link py-4" href="#">Tech Projects</a>
-                </li>
-                <li class="nav-item pl-2 px-md-1 px-lg-2">
-                    <a class="nav-link py-4" href="#">Audio + Music</a>
-                </li>
-                <li class="nav-item pl-2 px-md-1 px-lg-2">
-                    <a class="nav-link py-4" href="#">Blog</a>
-                </li>
-                <li class="nav-item pl-2 px-md-1 px-lg-2 d-md-none">
-                    <a class="nav-link py-4" href="#">Contact</a>
-                </li>
-            </ul>
-
-            <button class="btn btn-outline-primary my-2 m-0 d-none d-md-inline">Contact</button>
-        </div>
+      </div>
     </nav>
 
     <div class="jumbotron jumbotron-fluid text-center shadow px-5 pb-4">
-        <div class="watermark-holder">
-            <svg width="100%" height="100%" viewBox="0 0 880 973">
-                <g>
-                    <path d="M879.011,589.793l-879.011,382.711l0,-247.277l613.385,-241.16l265.626,-103.978l0,209.704Z"
-                        style="fill:#fff;fill-rule:nonzero;" />
-                    <path d="M879.011,380.089l-265.626,103.978l-613.385,-238.538l0,-245.529l879.011,380.089Z"
-                        style="fill:#fff;fill-opacity:0.76;fill-rule:nonzero;" />
-                </g>
-            </svg>
-        </div>
-        <div class="heroToAnimate">
-            <h1 class="d-none d-md-block display-1">Hi, I’m Vince. <span class="point-down"></span></h1>
-            <h1 class="d-none d-sm-block d-md-none display-4">Hi, I’m Vince.</h1>
-            <h1 class="d-block d-sm-none">Hi, I’m Vince.</h1>
-            <p class="lead">I'm a software engineer and composer / audio designer based out of the Seattle area.</p>
-            <hr class="my-4 mx-3">
-            <p class="follow">Check out some of my work!</p>
-            <!-- <p>I like web development, entrepreneurship, games, music, and corgis. I like corgis a lot.</p> -->
-            <div class="container d-flex justify-content-center">
-                <div class="d-none d-md-block pb-md-4 pt-md-3">
-                    <div class="d-inline mx-1 my-2 my-md-0"><a class="btn btn-outline-light btn-lg" href="#"
-                            role="button"><i class="fas fa-laptop-code altButtonIconToAnimate"></i><span
-                                class="pl-2">Tech
-                                Projects</span></a></div>
-                    <div class="d-inline mx-1 my-2 my-md-0"><a class="btn btn-outline-light btn-lg" href="#"
-                            role="button"><i class="fas fa-compact-disc buttonIconToAnimate"></i><span
-                                class="pl-2">Audio + Music</span></a></div>
-                    <div class="d-inline mx-1 my-2 my-md-0"><a class="btn btn-outline-light btn-lg" href="#"
-                            role="button"><i class="fas fa-pen-nib buttonIconToAnimate"></i><span
-                                class="pl-2">Blog</span></a>
-                    </div>
-                </div>
-                <div class="row d-md-none">
-                    <div class="col-12 mx-1 my-2 my-md-0"><a class="btn btn-outline-light btn-lg" href="#"
-                            role="button"><i class="fas fa-laptop-code"></i><span class="pl-2">Tech Projects</span></a>
-                    </div>
-                    <div class="col-12 mx-1 my-2 my-md-0"><a class="btn btn-outline-light btn-lg" href="#"
-                            role="button"><i class="fas fa-compact-disc"></i><span class="pl-2">Audio + Music</span></a>
-                    </div>
-                    <div class="col-12 mx-1 my-2 my-md-0"><a class="btn btn-outline-light btn-lg" href="#"
-                            role="button"><i class="fas fa-pen-nib"></i><span class="pl-2">Blog</span></a>
-                    </div>
-                </div>
+      <div class="watermark-holder">
+        <svg width="100%" height="100%" viewBox="0 0 880 973">
+          <g>
+            <path
+              d="M879.011,589.793l-879.011,382.711l0,-247.277l613.385,-241.16l265.626,-103.978l0,209.704Z"
+              style="fill: #fff; fill-rule: nonzero"
+            />
+            <path
+              d="M879.011,380.089l-265.626,103.978l-613.385,-238.538l0,-245.529l879.011,380.089Z"
+              style="fill: #fff; fill-opacity: 0.76; fill-rule: nonzero"
+            />
+          </g>
+        </svg>
+      </div>
+      <div class="heroToAnimate">
+        <h1 class="d-none d-md-block display-1">
+          Hi, I’m Vince. <span class="point-down"></span>
+        </h1>
+        <h1 class="d-none d-sm-block d-md-none display-4">Hi, I’m Vince.</h1>
+        <h1 class="d-block d-sm-none">Hi, I’m Vince.</h1>
+        <p class="lead">
+          I'm a software engineer and composer / audio designer based out of the
+          Seattle area.
+        </p>
+        <hr class="my-4 mx-3" />
+        <p class="follow">Check out some of my work!</p>
+        <!-- <p>I like web development, entrepreneurship, games, music, and corgis. I like corgis a lot.</p> -->
+        <div class="container d-flex justify-content-center">
+          <div class="d-none d-md-block pb-md-4 pt-md-3">
+            <div class="d-inline mx-1 my-2 my-md-0">
+              <a class="btn btn-outline-light btn-lg" href="#" role="button"
+                ><i class="fas fa-laptop-code altButtonIconToAnimate"></i
+                ><span class="pl-2">Tech Projects</span></a
+              >
             </div>
+            <div class="d-inline mx-1 my-2 my-md-0">
+              <a class="btn btn-outline-light btn-lg" href="#" role="button"
+                ><i class="fas fa-compact-disc buttonIconToAnimate"></i
+                ><span class="pl-2">Audio + Music</span></a
+              >
+            </div>
+            <div class="d-inline mx-1 my-2 my-md-0">
+              <a class="btn btn-outline-light btn-lg" href="#" role="button"
+                ><i class="fas fa-pen-nib buttonIconToAnimate"></i
+                ><span class="pl-2">Blog</span></a
+              >
+            </div>
+          </div>
+          <div class="row d-md-none">
+            <div class="col-12 mx-1 my-2 my-md-0">
+              <a class="btn btn-outline-light btn-lg" href="#" role="button"
+                ><i class="fas fa-laptop-code"></i
+                ><span class="pl-2">Tech Projects</span></a
+              >
+            </div>
+            <div class="col-12 mx-1 my-2 my-md-0">
+              <a class="btn btn-outline-light btn-lg" href="#" role="button"
+                ><i class="fas fa-compact-disc"></i
+                ><span class="pl-2">Audio + Music</span></a
+              >
+            </div>
+            <div class="col-12 mx-1 my-2 my-md-0">
+              <a class="btn btn-outline-light btn-lg" href="#" role="button"
+                ><i class="fas fa-pen-nib"></i><span class="pl-2">Blog</span></a
+              >
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <div id="resume" class="resume mx-5">
-        <h2 class="text-center display-4 d-none d-md-block"><span class="arrow"><i class="fas fa-caret-down"></i></span>
-            Resume</h2>
-        <h2 class="text-center display-5 d-md-none mb-5"><span class="arrow"><i class="fas fa-caret-down"></i></span>
-            Resume</h2>
+      <h2 class="text-center display-4 d-none d-md-block">
+        <span class="arrow"><i class="fas fa-caret-down"></i></span> Resume
+      </h2>
+      <h2 class="text-center display-5 d-md-none mb-5">
+        <span class="arrow"><i class="fas fa-caret-down"></i></span> Resume
+      </h2>
 
-        <div class="resume-section">
-            <h3 class="mb-3">Experience</h3>
+      <div class="resume-section">
+        <h3 class="mb-3">Experience</h3>
 
-            <div class="resume-card shadow-sm p-3 mb-4">
-                <section class="d-flex justify-content-between mb-1">
-                    <span class="title">Software Engineer @ Microsoft</span>
-                    <span class="time-interval">August 2020 — Present</span>
-                </section>
-                <span class="caption">TBD! Probably some MR stuff.</span>
-            </div>
-
-            <div class="resume-card shadow-sm p-3 mb-4">
-                <section class="d-flex justify-content-between mb-1">
-                    <span class="title">Software Engineering Intern @ Microsoft</span>
-                    <span class="time-interval">September — November 2019</span>
-                </section>
-                <span class="caption">
-                    I built prototypes for voice interactions in Remote Assist, a HoloLens-based application. The first
-                    prototype provided feedback and suggestions in the field of vision based on a voice command attempt.
-                    The second prototype introduced natural language processing of voice commands through Azure APIs.
-                    This aimed to reduce cognitive load in remembering commands and derived command intent based on
-                    keywords and phrases.
-                </span>
-            </div>
-
-            <div class="resume-card shadow-sm p-3 mb-4">
-                <section class="d-flex justify-content-between mb-1">
-                    <span class="title">Software Engineering Intern @ Tsugi, G.K.</span>
-                    <span class="time-interval">May — August 2019</span>
-                </section>
-                <span class="caption">I implemented parsers for motion capture formats including BVH and the proprietary
-                    Autodesk FBX ASCII format. These parsers allow users to assign an animation curve to control a
-                    time-based parameter in the audio middleware application GameSynth. Additionally, I prototyped a
-                    wrapper for real-time Leap Motion data input to control audio parameters.</span>
-            </div>
+        <div class="resume-card shadow-sm p-3 mb-4">
+          <section class="d-flex justify-content-between mb-1">
+            <span class="title">Software Engineer @ Microsoft</span>
+            <span class="time-interval">August 2020 — Present</span>
+          </section>
+          <span class="caption">Unfortunately no MR stuff :(</span>
         </div>
 
-        <div class="resume-section">
-            <h3 class="mb-3">Projects</h3>
-
-            <div id="portfolio" class="resume-card shadow-sm p-3 mb-4">
-                <section class="d-flex justify-content-between mb-1">
-                    <span class="title">Personal Portfolio Website</span>
-                    <span class="time-interval">June 2020 — Present</span>
-                </section>
-                <hr>
-                <div>
-                    <span class="title">Description</span>
-                </div>
-                <span class="caption">I'm going through Colt Steele's <em>The Web Developer Bootcamp</em>, so I used a
-                    combination of Bootstrap and extra stuff I researched like vector graphics and Sass.</span>
-                <hr>
-                <div class="technologies">
-                    <span class="tech px-2 mb-2">HTML</span>
-                    <span class="tech px-2 mb-2">Sass / CSS</span>
-                    <span class="tech px-2 mb-2">JavaScript</span>
-                    <span class="tech px-2 mb-2">Node.js</span>
-                    <span class="tech px-2 mb-2">Bootstrap</span>
-                    <span class="tech px-2 mb-2"></span>
-                </div>
-            </div>
-
-            <div id="melodWe" class="resume-card shadow-sm p-3 mb-4">
-                <section class="d-flex justify-content-between mb-1">
-                    <span class="title">melodWe</span>
-                    <span class="time-interval">January — May 2020</span>
-                </section>
-                <hr>
-                <div>
-                    <span class="title">Description</span>
-                </div>
-                <span class="caption">melodWe allows composers to congregate in virtual rooms and vote on each
-                    successive note in a melody in real time. Each note is randomly determined via weighted probability
-                    based on the number of votes. Both pitch and duration are determined separately in this way. This project was for
-                    my capstone course at Virginia Tech (senior project), in collaboration with my project partner
-                    Lauren Ahart.</span>
-                
-                <div class="d-flex justify-content-center">
-                    <span class="project-links px-2 mx-1 mb-2 mt-3">
-                        <a href="http://melodwe.vincentdinardo.com" target="_blank">&gt; hosted version</a>
-                    </span>
-                </div>
-                <hr>
-                <div class="technologies">
-                    <span class="tech px-2 mb-2">JavaScript</span>
-                    <span class="tech px-2 mb-2">Node.js</span>
-                    <span class="tech px-2 mb-2">Express.js</span>
-                    <span class="tech px-2 mb-2">Socket.IO</span>
-                    <span class="tech px-2 mb-2">MySQL</span>
-                    <span class="tech px-2 mb-2">Docker</span>
-                    <span class="tech px-2 mb-2">Nginx</span>
-                    <span class="tech px-2 mb-2">React</span>
-                    <span class="tech px-2 mb-2">Material-UI</span>
-                    <span class="tech px-2 mb-2">p5.js</span>
-                </div>
-            </div>
-
-            <div id="surveyor" class="resume-card shadow-sm p-3 mb-4">
-                <section class="d-flex justify-content-between mb-1">
-                    <span class="title">Surveyor</span>
-                    <span class="time-interval">January — May 2019</span>
-                </section>
-                <hr>
-                <div>
-                    <span class="title">Description</span>
-                </div>
-                <span class="caption">A platform where admins can create surveys and all users can vote on surveys and
-                    see results change in real time. This project was for CS 3754 Cloud Software Development, and the
-                    instructor selected my implementation as an example.</span>
-                <div class="d-flex justify-content-center">
-                    <span class="project-links px-2 mx-1 mb-2 mt-3">
-                        <a href="https://www.cs.cloud.vt.edu/projects/2019/dinardov/" target="_blank">&gt; hosted version</a>
-                    </span>
-                    <span class="project-links px-2 mx-1 mb-2 mt-3">
-                        <a href="https://www.cs.cloud.vt.edu/#/" target="_blank">&gt; class website</a>
-                    </span>
-                </div>
-                <hr>
-                <div class="technologies">
-                    <span class="tech px-2 mb-2">JavaScript</span>
-                    <span class="tech px-2 mb-2">Node.js</span>
-                    <span class="tech px-2 mb-2">Express.js</span>
-                    <span class="tech px-2 mb-2">JWT</span>
-                    <span class="tech px-2 mb-2">Redis</span>
-                    <span class="tech px-2 mb-2">Socket.IO</span>
-                    <span class="tech px-2 mb-2">MySQL</span>
-                    <span class="tech px-2 mb-2">Nginx</span>
-                    <span class="tech px-2 mb-2">React</span>
-                    <span class="tech px-2 mb-2">Material-UI</span>
-                </div>
-            </div>
+        <div class="resume-card shadow-sm p-3 mb-4">
+          <section class="d-flex justify-content-between mb-1">
+            <span class="title">Software Engineering Intern @ Microsoft</span>
+            <span class="time-interval">September — November 2019</span>
+          </section>
+          <span class="caption">
+            I built prototypes for voice interactions in Remote Assist, a
+            HoloLens-based application. The first prototype provided feedback
+            and suggestions in the field of vision based on a voice command
+            attempt. The second prototype introduced natural language processing
+            of voice commands through Azure APIs. This aimed to reduce cognitive
+            load in remembering commands and derived command intent based on
+            keywords and phrases.
+          </span>
         </div>
 
-        <div class="resume-section">
-            <h3 class="mb-3">Leadership</h3>
+        <div class="resume-card shadow-sm p-3 mb-4">
+          <section class="d-flex justify-content-between mb-1">
+            <span class="title">Software Engineering Intern @ Tsugi, G.K.</span>
+            <span class="time-interval">May — August 2019</span>
+          </section>
+          <span class="caption"
+            >I implemented parsers for motion capture formats including BVH and
+            the proprietary Autodesk FBX ASCII format. These parsers allow users
+            to assign an animation curve to control a time-based parameter in
+            the audio middleware application GameSynth. Additionally, I
+            prototyped a wrapper for real-time Leap Motion data input to control
+            audio parameters.</span
+          >
+        </div>
+      </div>
+
+      <div class="resume-section">
+        <h3 class="mb-3">Projects</h3>
+
+        <div id="portfolio" class="resume-card shadow-sm p-3 mb-4">
+          <section class="d-flex justify-content-between mb-1">
+            <span class="title">Personal Portfolio Website</span>
+            <span class="time-interval">June 2020 — Present</span>
+          </section>
+          <hr />
+          <div>
+            <span class="title">Description</span>
+          </div>
+          <span class="caption"
+            >I'm going through Colt Steele's
+            <em>The Web Developer Bootcamp</em>, so I used a combination of
+            Bootstrap and extra stuff I researched like vector graphics and
+            Sass.</span
+          >
+          <hr />
+          <div class="technologies">
+            <span class="tech px-2 mb-2">HTML</span>
+            <span class="tech px-2 mb-2">Sass / CSS</span>
+            <span class="tech px-2 mb-2">JavaScript</span>
+            <span class="tech px-2 mb-2">Node.js</span>
+            <span class="tech px-2 mb-2">Bootstrap</span>
+            <span class="tech px-2 mb-2"></span>
+          </div>
         </div>
 
-        <div class="resume-section">
-            <h3 class="mb-3">Education</h3>
+        <div id="melodWe" class="resume-card shadow-sm p-3 mb-4">
+          <section class="d-flex justify-content-between mb-1">
+            <span class="title">melodWe</span>
+            <span class="time-interval">January — May 2020</span>
+          </section>
+          <hr />
+          <div>
+            <span class="title">Description</span>
+          </div>
+          <span class="caption"
+            >melodWe allows composers to congregate in virtual rooms and vote on
+            each successive note in a melody in real time. Each note is randomly
+            determined via weighted probability based on the number of votes.
+            Both pitch and duration are determined separately in this way. This
+            project was for my capstone course at Virginia Tech (senior
+            project), in collaboration with my project partner Lauren
+            Ahart.</span
+          >
+
+          <div class="d-flex justify-content-center">
+            <span class="project-links px-2 mx-1 mb-2 mt-3">
+              <a href="http://melodwe.vincentdinardo.com" target="_blank"
+                >&gt; hosted version</a
+              >
+            </span>
+          </div>
+          <hr />
+          <div class="technologies">
+            <span class="tech px-2 mb-2">JavaScript</span>
+            <span class="tech px-2 mb-2">Node.js</span>
+            <span class="tech px-2 mb-2">Express.js</span>
+            <span class="tech px-2 mb-2">Socket.IO</span>
+            <span class="tech px-2 mb-2">MySQL</span>
+            <span class="tech px-2 mb-2">Docker</span>
+            <span class="tech px-2 mb-2">Nginx</span>
+            <span class="tech px-2 mb-2">React</span>
+            <span class="tech px-2 mb-2">Material-UI</span>
+            <span class="tech px-2 mb-2">p5.js</span>
+          </div>
         </div>
 
-        <div class="resume-section">
-            <h3 class="mb-3">Honors + Awards</h3>
+        <div id="surveyor" class="resume-card shadow-sm p-3 mb-4">
+          <section class="d-flex justify-content-between mb-1">
+            <span class="title">Surveyor</span>
+            <span class="time-interval">January — May 2019</span>
+          </section>
+          <hr />
+          <div>
+            <span class="title">Description</span>
+          </div>
+          <span class="caption"
+            >A platform where admins can create surveys and all users can vote
+            on surveys and see results change in real time. This project was for
+            CS 3754 Cloud Software Development, and the instructor selected my
+            implementation as an example.</span
+          >
+          <div class="d-flex justify-content-center">
+            <span class="project-links px-2 mx-1 mb-2 mt-3">
+              <a
+                href="https://www.cs.cloud.vt.edu/projects/2019/dinardov/"
+                target="_blank"
+                >&gt; hosted version</a
+              >
+            </span>
+            <span class="project-links px-2 mx-1 mb-2 mt-3">
+              <a href="https://www.cs.cloud.vt.edu/#/" target="_blank"
+                >&gt; class website</a
+              >
+            </span>
+          </div>
+          <hr />
+          <div class="technologies">
+            <span class="tech px-2 mb-2">JavaScript</span>
+            <span class="tech px-2 mb-2">Node.js</span>
+            <span class="tech px-2 mb-2">Express.js</span>
+            <span class="tech px-2 mb-2">JWT</span>
+            <span class="tech px-2 mb-2">Redis</span>
+            <span class="tech px-2 mb-2">Socket.IO</span>
+            <span class="tech px-2 mb-2">MySQL</span>
+            <span class="tech px-2 mb-2">Nginx</span>
+            <span class="tech px-2 mb-2">React</span>
+            <span class="tech px-2 mb-2">Material-UI</span>
+          </div>
         </div>
+      </div>
 
+      <div class="resume-section">
+        <h3 class="mb-3">Leadership</h3>
+      </div>
+
+      <div class="resume-section">
+        <h3 class="mb-3">Education</h3>
+      </div>
+
+      <div class="resume-section">
+        <h3 class="mb-3">Honors + Awards</h3>
+      </div>
     </div>
 
     <footer>
-        <div class="footer-background jumbotron jumbotron-fluid shadow px-5 pt-5 mb-0 pb-1">
-            <div class="outline-holder">
-                <svg width="100%" height="100%" viewBox="0 0 884 977">
-                    <g>
-                        <path
-                            d="M881.094,591.877l-879.011,382.71l0,-247.276l613.385,-241.16l265.626,-103.979l0,209.705Z"
-                            style="fill:none;fill-rule:nonzero;stroke:#FFF;stroke-width:1px;" />
-                        <path d="M881.094,382.172l-265.626,103.979l-613.385,-238.539l0,-245.529l879.011,380.089Z"
-                            style="fill:none;fill-rule:nonzero;stroke:#FFF;stroke-width:1px;" />
-                    </g>
-                </svg>
+      <div
+        class="footer-background jumbotron jumbotron-fluid shadow px-5 pt-5 mb-0 pb-1"
+      >
+        <div class="outline-holder">
+          <svg width="100%" height="100%" viewBox="0 0 884 977">
+            <g>
+              <path
+                d="M881.094,591.877l-879.011,382.71l0,-247.276l613.385,-241.16l265.626,-103.979l0,209.705Z"
+                style="
+                  fill: none;
+                  fill-rule: nonzero;
+                  stroke: #ddd;
+                  stroke-width: 3px;
+                "
+              />
+              <path
+                d="M881.094,382.172l-265.626,103.979l-613.385,-238.539l0,-245.529l879.011,380.089Z"
+                style="
+                  fill: none;
+                  fill-rule: nonzero;
+                  stroke: #ddd;
+                  stroke-width: 3px;
+                "
+              />
+            </g>
+          </svg>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-6 col-sm-4">
+              <div class="pb-3"><a class="footer" href="#">Home</a></div>
+              <div class="pb-3">
+                <a class="footer" href="#">Tech Projects</a>
+              </div>
+              <div class="pb-3">
+                <a class="footer" href="#">Audio + Music</a>
+              </div>
+              <div class="pb-3"><a class="footer" href="#">Blog</a></div>
             </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-6 col-sm-4">
-                        <div class="pb-3"><a class="footer" href="#"">Home</a></div>
-                        <div class=" pb-3"><a class=" footer" href="#"">Tech Projects</a></div>
-                        <div class=" pb-3"><a class=" footer" href="#"">Audio + Music</a></div>
-                        <div class=" pb-3"><a class=" footer" href="#"">Blog</a></div>
-                    </div>
-                    <div class=" col-6 col-sm-4">
-                                            <div class="pb-3"><a class="footer" href="#"">About Me</a></div>
-                        <div class=" pb-3"><a class=" footer" href="#resume"">Resume</a></div>
-                        <div class=" pb-3"><a class=" footer" href="#"">Contact Me</a></div>
-                    </div>
-                    <div class=" d-none d-sm-block col-sm-4">
-                                                            <div><a href="https://www.linkedin.com/in/vincent-di-nardo/"
-                                                                    aria-label="LinkedIn" target="_blank"
-                                                                    class="footer"><i class="fab fa-linkedin"></i></a>
-                                                            </div>
-                                                            <div><a href="https://github.com/dinardov"
-                                                                    aria-label="GitHub" target="_blank"
-                                                                    class="footer"><i
-                                                                        class="fab fa-github-square"></i></a></div>
-                                                            <div><a href="https://soundcloud.com/vince-di-nardo"
-                                                                    aria-label="SoundCloud" target="_blank"
-                                                                    class="footer"><i class="fab fa-soundcloud"></i></a>
-                                                            </div>
-                                            </div>
-                        </div>
-                        <div class="d-sm-none d-flex justify-content-center pt-3">
-                            <a href="https://www.linkedin.com/in/vincent-di-nardo/" aria-label="LinkedIn"
-                                target="_blank" class="footer px-2"><i class="fab fa-linkedin"></i></a>
-                            <a href="https://github.com/dinardov" aria-label="GitHub" target="_blank"
-                                class="footer px-2"><i class="fab fa-github-square"></i></a>
-                            <a href="https://soundcloud.com/vince-di-nardo" aria-label="SoundCloud" target="_blank"
-                                class="footer px-2"><i class="fab fa-soundcloud"></i></a>
-                        </div>
-                    </div>
-                    <hr class="my-4">
-                    <p class="copyright text-center">© 2020 Vincent Di Nardo. All rights reserved. <a href="#"><i
-                                class="fas fa-gem gem"></i></a></p>
-                </div>
+            <div class="col-6 col-sm-4">
+              <div class="pb-3"><a class="footer" href="#">About Me</a></div>
+              <div class="pb-3">
+                <a class="footer" href="#resume">Resume</a>
+              </div>
+              <div class="pb-3"><a class="footer" href="#">Contact Me</a></div>
+            </div>
+            <div class="d-none d-sm-block col-sm-4">
+              <div>
+                <a
+                  href="https://www.linkedin.com/in/vincent-di-nardo/"
+                  aria-label="LinkedIn"
+                  target="_blank"
+                  class="footer"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+              </div>
+              <div>
+                <a
+                  href="https://github.com/dinardov"
+                  aria-label="GitHub"
+                  target="_blank"
+                  class="footer"
+                  ><i class="fab fa-github-square"></i
+                ></a>
+              </div>
+              <div>
+                <a
+                  href="https://soundcloud.com/vince-di-nardo"
+                  aria-label="SoundCloud"
+                  target="_blank"
+                  class="footer"
+                  ><i class="fab fa-soundcloud"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="d-sm-none d-flex justify-content-center pt-3">
+            <a
+              href="https://www.linkedin.com/in/vincent-di-nardo/"
+              aria-label="LinkedIn"
+              target="_blank"
+              class="footer px-2"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a
+              href="https://github.com/dinardov"
+              aria-label="GitHub"
+              target="_blank"
+              class="footer px-2"
+              ><i class="fab fa-github-square"></i
+            ></a>
+            <a
+              href="https://soundcloud.com/vince-di-nardo"
+              aria-label="SoundCloud"
+              target="_blank"
+              class="footer px-2"
+              ><i class="fab fa-soundcloud"></i
+            ></a>
+          </div>
+        </div>
+        <hr class="my-4" />
+        <p class="copyright text-center">
+          © 2020 Vincent Di Nardo. All rights reserved.
+          <a href="#"><i class="fas fa-gem gem"></i></a>
+        </p>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>
